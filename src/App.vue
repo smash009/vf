@@ -18,7 +18,7 @@
 }
 
 #nav {
-  padding: 32mpx;
+  padding: 30mpx;
 }
 
 #nav a {
