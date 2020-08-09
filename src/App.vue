@@ -6,34 +6,34 @@
       dark
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" />
-      <v-toolbar-title>Page title</v-toolbar-title>
+      <!--v-toolbar-title>Page title</!--v-toolbar-title-->
+      <site-title :title="title"></site-title>
     <v-spacer/>
-    <v-btn icon to="/about">
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
     </v-app-bar>
       <v-navigation-drawer app v-model="drawer">
-        test
+
       </v-navigation-drawer>
     <v-content>
       <router-view>
 
       </router-view>
     </v-content>
-      <v-footer app color="primary" dark absolute>
-        <v-spacer></v-spacer>
-        <div>&copy; {{ new Date().getFullYear() }}</div>
-      </v-footer>
+      <site-footer :footer="footer"></site-footer>
   </v-app>
 </template>
 
 <script>
+import SiteTitle from '@/views/site/title'
+import SiteFooter from '@/views/site/footer'
 
 export default {
+  components: { SiteTitle, SiteFooter },
   name: 'App',
   data () {
     return {
-      drawer: false
+      drawer: false,
+      title: '나의 타이틀입니다',
+      footer: '나의 푸터입니다'
     }
   }
 }
