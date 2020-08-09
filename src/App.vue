@@ -11,11 +11,18 @@
     <v-spacer/>
     </v-app-bar>
       <v-navigation-drawer app v-model="drawer">
-
+        <v-slide-item>
+          <v-list-item-title class="title">
+            Application
+          </v-list-item-title>
+          <v-list-item-subtitle>
+            Subtext
+          </v-list-item-subtitle>
+        </v-slide-item>
+        <site-menu></site-menu>
       </v-navigation-drawer>
     <v-content>
       <router-view>
-
       </router-view>
     </v-content>
       <site-footer :footer="footer"></site-footer>
@@ -24,14 +31,16 @@
 
 <script>
 import SiteTitle from '@/views/site/title'
+import SiteMenu from '@/views/site/menu'
 import SiteFooter from '@/views/site/footer'
 
 export default {
-  components: { SiteTitle, SiteFooter },
+  components: { SiteTitle, SiteMenu, SiteFooter },
   name: 'App',
   data () {
     return {
       drawer: false,
+      items: [],
       title: '나의 타이틀입니다',
       footer: '나의 푸터입니다'
     }
