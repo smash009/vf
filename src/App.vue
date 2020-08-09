@@ -12,7 +12,7 @@
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </v-app-bar>
-      <v-navigation-drawer v-model="drawer">
+      <v-navigation-drawer app v-model="drawer">
         test
       </v-navigation-drawer>
     <v-content>
