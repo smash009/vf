@@ -5,8 +5,13 @@
       color="primary"
       dark
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon/>
+      <v-toolbar-title>Page title</v-toolbar-title>
     </v-app-bar>
+    <v-spacer/>
+    <v-btn icon to="/about">
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
   </v-app>
 </template>
 
