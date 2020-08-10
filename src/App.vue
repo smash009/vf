@@ -6,7 +6,7 @@
       dark
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" />
-      <!--v-toolbar-title>Page title</!--v-toolbar-title-->
+      <!--v-toolbar-title>Page title</v-toolbar-title-->
       <site-title :title="title"></site-title>
     <v-spacer/>
     </v-app-bar>
