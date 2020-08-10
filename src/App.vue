@@ -41,8 +41,8 @@ export default {
     return {
       drawer: false,
       items: [],
-      title: '나의 타이틀입니다',
-      footer: '나의 푸터입니다'
+      title: '나의 타이틀입니다.',
+      footer: '나의 푸터입니다.'
     }
   }
 }
