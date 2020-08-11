@@ -18,6 +18,9 @@
           <v-list-item-subtitle>
             Subtext
           </v-list-item-subtitle>
+          <v-list-item-subtitle>
+            Subtext2
+          </v-list-item-subtitle>
         </v-slide-item>
         <site-menu></site-menu>
       </v-navigation-drawer>
