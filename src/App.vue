@@ -16,7 +16,7 @@
             Application
           </v-list-item-title>
           <v-list-item-subtitle>
-            Subtext
+            Subtext1
           </v-list-item-subtitle>
           <v-list-item-subtitle>
             Subtext2
